@@ -1,0 +1,58 @@
+{
+  "caseId": "CASE-2024-DEMO-0002",
+  "vin": "LSGAB52L7DF654321",
+  "make": "DemoMotors",
+  "model": "X3",
+  "modelYear": 2021,
+  "displayedOdometerKm": 42000,
+  "collectedAtEpoch": 1704067200000,
+  "ecuReadings": [
+    {
+      "ecuId": "ECM",
+      "sourceKind": "ECU",
+      "trustLevel": "HIGH",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 42050,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "9e1a1e7ea08fc8c90b08b88278d17b06499acdd54c629f159c4b050414f39ca3"
+    },
+    {
+      "ecuId": "TCU",
+      "sourceKind": "ECU",
+      "trustLevel": "HIGH",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 41980,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "6cfc5e6ffb375b3a1d26631c4fe61e7a2f03ee1d5b4ba69d75febaa8f484e72d"
+    },
+    {
+      "ecuId": "TBOX",
+      "sourceKind": "TELEMATICS",
+      "trustLevel": "CRYPTOGRAPHIC",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 42010,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "449532e14a535a5a22a0c1007ec6f30490a2f4941456db5b03ed1c9d9fe7ff9b"
+    }
+  ],
+  "historyEvents": [
+    {
+      "eventId": "INSP1",
+      "sourceKind": "INSPECTION",
+      "trustLevel": "CRYPTOGRAPHIC",
+      "recordedAtEpoch": 1640995200000,
+      "odometerKm": 21000,
+      "documentHash": "4cd9b7672d7fbee8fb51fb1e049f690342035f543a8efe734b7b5ffb0c154a45",
+      "verified": true
+    },
+    {
+      "eventId": "INSP2",
+      "sourceKind": "INSPECTION",
+      "trustLevel": "CRYPTOGRAPHIC",
+      "recordedAtEpoch": 1672531200000,
+      "odometerKm": 33000,
+      "documentHash": "420fce314175df402adbeae3cfbbb85665b72d8b9bc2346f463e32a82f64b114",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "caseId": "CASE-2024-DEMO-0001",
+  "vin": "LSGAB52L7DF123456",
+  "make": "DemoMotors",
+  "model": "X5",
+  "modelYear": 2020,
+  "displayedOdometerKm": 80000,
+  "collectedAtEpoch": 1704067200000,
+  "assumedAverageSpeedKmh": 35.0,
+  "ecuReadings": [
+    {
+      "ecuId": "IC/KOMBI",
+      "sourceKind": "INSTRUMENT_CLUSTER",
+      "trustLevel": "UNTRUSTED",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 80000,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "1a989d4708d37ee790d6d1895c67c621f9d3a3df55ff95722a46a21d8a244452",
+      "artifact": "ic_frame.bin",
+      "notes": "仪表盘当前显示里程，即待证伪对象"
+    },
+    {
+      "ecuId": "ECM/ENGINE",
+      "sourceKind": "ECU",
+      "trustLevel": "HIGH",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 152000,
+      "operatingHours": 4120.5,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "7464395f40f2af4abff2e817935df0834b7658a8084cddc6d9259c2ed43a9955",
+      "artifact": "ecm_frame.bin",
+      "notes": "发动机 ECU DID 0xFFC0 总里程快照"
+    },
+    {
+      "ecuId": "TCU/GEARBOX",
+      "sourceKind": "ECU",
+      "trustLevel": "HIGH",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 151800,
+      "operatingHours": 4118.0,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "5fb249b64b65b121dc042bf86bcad77ed2bdc50518f79c3be4ac684b5e06d229",
+      "artifact": "tcu_frame.bin",
+      "notes": "变速箱控制单元里程与工作小时"
+    },
+    {
+      "ecuId": "BCM/BODY",
+      "sourceKind": "BODY_MODULE",
+      "trustLevel": "MEDIUM",
+      "ecuStatus": "ORIGINAL",
+      "odometerKm": 150900,
+      "readAtEpoch": 1704067200000,
+      "rawPayloadHash": "97aad1184d38dff9abe8c2d245a56a79004b1da8c6d3febb7b427911c7fc0c57",
+      "artifact": "bcm_frame.bin",
+      "notes": "车身控制模块舒适功能里程，调表者常遗漏"
+    }
+  ],
+  "historyEvents": [
+    {
+      "eventId": "SERVICE-2022-09",
+      "sourceKind": "SERVICE_RECORD",
+      "trustLevel": "MEDIUM",
+      "recordedAtEpoch": 1662000000000,
+      "odometerKm": 118000,
+      "documentHash": "9053beec22eeadf66be4df900d909d45e2aeaccf21f9b83a032df25673e1ae7a",
+      "artifact": "service_2022.pdf",
+      "verified": true,
+      "summary": "授权 4S 店定期保养工单"
+    },
+    {
+      "eventId": "INSPECTION-2023-11",
+      "sourceKind": "INSPECTION",
+      "trustLevel": "CRYPTOGRAPHIC",
+      "recordedAtEpoch": 1699000000000,
+      "odometerKm": 142000,
+      "documentHash": "a8fb46d2302ab5d0c48a1adcb3a1d4fab94b398cc01aed2574e08163ed601d66",
+      "artifact": "inspection_2023.pdf",
+      "verified": true,
+      "summary": "机动车检测站 OBD 官方读数，带平台数字签名"
+    }
+  ]
+}

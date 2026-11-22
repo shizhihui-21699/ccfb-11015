@@ -16,3 +16,11 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# Gradle / JVM
+.gradle/
+build/
+*.class
+*.jar
+!gradle/wrapper/*.jar
+out/
